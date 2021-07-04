@@ -1,0 +1,51 @@
+body {
+  background-color: lightblue;
+  margin: auto;
+  width: 100%;
+}
+
+main {
+  text-align: center;
+}
+
+.mainDiv {
+  text-align: center;
+}
+
+.floatDiv {
+  background-color: lightblue;
+  float: right;
+  margin: auto;
+  width: 90%;
+}
+
+h2{
+  margin: auto;
+  width: 100%;
+}
+
+ul{
+  margin: 0; padding: 0;
+  text-align: center;
+}
+
+li {
+  font-weight: bold;
+  list-style-position: inside;
+  padding: 5px;
+}
+
+img {
+  border: solid #000;
+  border-width: 10 10px;
+}
+
+footer {
+  background-color: cornflowerblue;
+  position: absolute;
+  bottom:-150px;
+  left: 0px;
+  float: inline-start;
+  width:200%;
+  padding: 10px;
+}
