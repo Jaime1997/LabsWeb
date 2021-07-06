@@ -35,7 +35,13 @@ body {
 .social {
   display: flex;
   list-style-type: none;
-  align-self: flex-end;
+  justify-content: space-between;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo {
@@ -48,12 +54,20 @@ body {
 .menu{
     display: flex;
     list-style-type: none;
-    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.hamburger{
+  position: absolute;
+  right: 45px;
+  clear: none;
+  float:right;
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 li{
-  display: flex;
-  flex-grow: 1;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -64,16 +78,28 @@ li{
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product {
+    width: 100%;
+  }
+
   .hamburger{
     visibility: hidden;
   }
 }
 
-@media (max-width: 1024) {
+@media (max-width: 768px) {
   body {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .menu{
     visibility: hidden;
   }
