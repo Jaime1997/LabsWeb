@@ -16,15 +16,20 @@ body {
   border: solid gray;
   border-width: 1px 1px;
   margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 10px
 }
 
 .navbar {
   display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: gray;
+  
 }
 
 .social {
@@ -53,11 +58,24 @@ li{
   margin-right: 5px;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
+/* Responsive layout */
 @media (min-width: 1025px) {
   body {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+  }
+  .hamburger{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1024) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu{
+    visibility: hidden;
   }
 }
 
